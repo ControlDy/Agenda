@@ -64,16 +64,16 @@ class AgendaService {
                        const std::vector<std::string> participator);
 
     /**
-     * search a meeting by username and title
-     * @param uesrName the sponsor's userName
+     * search meetings by username and title (user as sponsor or participator)
+     * @param uesrName the user's userName
      * @param title the meeting's title
      * @return a meeting list result
      */
     std::list<Meeting> meetingQuery(const std::string userName,
                                     const std::string title) const;
     /**
-     * search a meeting by username, time interval
-     * @param uesrName the sponsor's userName
+     * search a meeting by username, time interval (user as sponsor or participator)
+     * @param uesrName the user's userName
      * @param startDate time interval's start date
      * @param endDate time interval's end date
      * @return a meeting list result
